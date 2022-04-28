@@ -1,0 +1,9 @@
+16:34:35 **** Rebuild of configuration Debug for project ex1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+Cannot run program "gcc": The system cannot find the file specified.
+
+
+
+16:34:35 Build Finished (took 41ms)
+

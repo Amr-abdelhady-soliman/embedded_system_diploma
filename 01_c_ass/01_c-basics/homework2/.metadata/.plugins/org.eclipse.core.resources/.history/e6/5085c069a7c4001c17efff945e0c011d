@@ -1,0 +1,26 @@
+
+#include "stdio.h"
+void main ()
+{
+	int a;
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	printf("inter number\n");
+	scanf("%d",&a);
+	if (a>0)
+	{
+		printf("%d is positive",a);
+	}
+	else if (a<0)
+	{
+		printf("%d is negative",a);
+	}
+	else
+	{
+		printf("you entered zero");
+	}
+
+}
+
+
+

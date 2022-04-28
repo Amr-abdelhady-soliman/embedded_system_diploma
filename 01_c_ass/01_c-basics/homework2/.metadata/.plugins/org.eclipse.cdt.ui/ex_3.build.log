@@ -1,0 +1,10 @@
+16:52:19 **** Rebuild of configuration Debug for project ex_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o ex_3.exe main.o 
+
+16:52:20 Build Finished (took 630ms)
+

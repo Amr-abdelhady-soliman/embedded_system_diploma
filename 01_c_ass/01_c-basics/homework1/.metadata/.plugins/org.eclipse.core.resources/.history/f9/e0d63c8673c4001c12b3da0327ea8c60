@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 25, 2022
+ *      Author: amr gweily
+ */
+
+
+// Solving I/O form console Problem
+setvbuf(stdout, NULL, _IONBF, 0);
+setvbuf(stderr, NULL, _IONBF, 0);
+#include "stdio.h"
+void main()
+{
+	printf("c programming");
+}

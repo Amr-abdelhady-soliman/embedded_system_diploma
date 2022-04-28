@@ -1,0 +1,46 @@
+/*
+ * mai.c
+ *
+ *  Created on: Apr 25, 2022
+ *      Author: amr gweily
+ */
+
+
+
+#include "stdio.h"
+void main ()
+{
+	float a,b,c;
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	printf("inter number 1 \n");
+	scanf("%f",&a);
+	printf("inter number 1 \n");
+	scanf("%f",&b);
+	printf("inter number 1 \n");
+	scanf("%f",&c);
+	if (a>b)
+	{
+		if (a>c)
+		{
+			printf("%f is bigger",a);
+		}
+		else
+		{
+			printf("%f is bigger"c);
+		}
+	}
+	else
+	{
+		if (b>c)
+		{
+			printf("%f is bigger",b);
+		}
+		else
+		{
+			printf("%f is bigger",c);
+		}
+	}
+}
+
+
