@@ -1,0 +1,10 @@
+21:37:24 **** Rebuild of configuration Debug for project delete_element_from_array_elements ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:2:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o delete_element_from_array_elements.exe main.o 
+
+21:37:25 Build Finished (took 621ms)
+

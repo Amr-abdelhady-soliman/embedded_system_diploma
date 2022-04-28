@@ -1,0 +1,22 @@
+#include "stdio.h"
+#include "string.h"
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	char x[10];
+	char temp;
+	int i=0,count;
+	printf("enter string \n");
+	gets(x);
+	count=strlen(x)-1;
+	while (i<count)
+	{
+		temp=x[i];
+		x[i]=x[count];
+		x[count]=temp;
+		i++;
+		count--;
+	}
+	printf("the reverse is %s \n ",x);
+}

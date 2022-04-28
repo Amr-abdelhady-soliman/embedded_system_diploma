@@ -1,0 +1,10 @@
+#include "stdio.h"
+#include "string.h"
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	int x,i=4,j=7;
+	x=j||i++&&1;
+	printf("%d %d",x,i);
+}

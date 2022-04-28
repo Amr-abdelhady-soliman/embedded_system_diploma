@@ -1,0 +1,19 @@
+#include "stdio.h"
+#include "string.h"
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	int i,count=0;
+	char name[100],freq;
+	printf("enter a string \n");
+	gets (name);
+	printf("enter a character to find the frequency \n");
+	scanf("%c",&freq);
+	for (i=0;i<strlen(name);i++)
+	{
+		if (name[i]==freq)
+			count++;
+	}
+	printf("the count is %d",count);
+}

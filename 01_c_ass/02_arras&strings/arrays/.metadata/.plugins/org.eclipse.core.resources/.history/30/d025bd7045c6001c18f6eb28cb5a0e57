@@ -1,0 +1,39 @@
+#include "stdio.h"
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	int i,j,r,c;
+	int x[10][10],y[10][10];
+	printf("enter number of rows and columns you want \n");
+	scanf("%d %d",r,c);
+	printf("enter elements of matrix \n");
+	for (i=0;i<r;i++)
+	{
+		for (j=0;j<c;j++)
+		{
+			printf("enter elemennt a(%d,%d) \n",i+1,j+1);
+			scanf("%f",&x[i][j]);
+		}
+	}
+	printf("display elements of matrix \n");
+	for (i=0;i<r;i++)
+	{
+		for (j=0;j<c;j++)
+		{
+			printf("enter elemennt x(%d,%d)=%d \t",i+1,j+1,x[i][j]);
+		}
+		printf("\n");
+	}
+	printf ("transpose of matrix is : \n");
+	for (i=0;i<2;i++)
+	{
+		for (j=0;j<2;j++)
+		{
+			y[i][j]=x[j][i];
+			printf(" %d \t",y[i][j]);
+		}
+		printf("\n");
+	}
+
+}

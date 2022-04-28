@@ -1,0 +1,15 @@
+#include "stdio.h"
+#include "string.h"
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	char x[100];
+	int i,count=0;
+	printf("enter string \n");
+	scanf("%s",x);
+	for (i=0;x[i]!=0;i++)
+	{
+		count++;
+	}
+}

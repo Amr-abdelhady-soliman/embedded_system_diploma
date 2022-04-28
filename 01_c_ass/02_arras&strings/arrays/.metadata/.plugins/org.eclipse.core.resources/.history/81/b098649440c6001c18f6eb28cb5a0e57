@@ -1,0 +1,25 @@
+#include "stdio.h"
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	int i,j;
+	float sum=0;
+	float x[2][2];
+	for (i=0;i<2;i++)
+	{
+		for (j=0;j<2;j++)
+		{
+			printf("enter elemennt (%d,%d) \n",i+1,j+1);
+			scanf("%f",&x[i][j]);
+		}
+	}
+	for (i=0;i<2;i++)
+		{
+			for (j=0;j<2;j++)
+			{
+				sum=sum+x[i][j];
+			}
+		}
+	printf("sum=%f",sum);
+}
