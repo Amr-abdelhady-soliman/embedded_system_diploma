@@ -1,0 +1,31 @@
+#include "stdio.h"
+int check_prime(int);
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	int x,y,i,flag;
+	int arr[50]={0};
+	printf("enter two numbers (interval) \n");
+	scanf("%d%d",&x,&y);
+	for (i=x+1;i<y;i++)
+	{
+		flag=check_prime(i);
+		if (flag==0)
+		{
+			printf("%d",i);
+			printf("\t");
+
+		}
+	}
+	int check_prime (int x)
+	{
+		int j,flag=0;
+		for (j=2;j<=x/2;j++)
+		{
+			if (x%j==0)
+				flag=1;
+			break
+		}
+		return flag;
+	}

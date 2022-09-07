@@ -1,0 +1,125 @@
+20:38:20 **** Clean-only build of configuration Debug for project reverse a sentence using recursion ****
+rm -rf main.d main.o "reverse a sentence using recursion.exe" 
+20:38:25 **** Rebuild of configuration Debug for project reverse a sentence using recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'reverse_sentence':
+..\main.c:14:9: warning: multi-character character constant [-Wmultichar]
+  if (c!='/n')
+         ^~~~
+gcc -o "reverse a sentence using recursion.exe" main.o 
+Info: Nothing to build for reverse a sentence using recursion
+20:39:11 **** Incremental Build of configuration Debug for project reverse a sentence using recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o "reverse a sentence using recursion.exe" main.o 
+Info: Nothing to build for reverse a sentence using recursion
+20:45:05 **** Rebuild of configuration Debug for project program to caculate the power using recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:12:9: error: called object 'power' is not a function or function pointer
+  power =power(number,power);
+         ^~~~~
+..\main.c:7:8: note: declared here
+  int x,power,number;
+        ^~~~~
+..\main.c:13:27: error: 'factorial' undeclared (first use in this function)
+  printf("factorial is %d",factorial);
+                           ^~~~~~~~~
+..\main.c:13:27: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c: In function 'power':
+..\main.c:21:14: error: called object 'power' is not a function or function pointer
+   return num*power(num-1);
+              ^~~~~
+..\main.c:16:23: note: declared here
+ int power(int num,int power)
+                       ^~~~~
+..\main.c:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+20:46:21 **** Incremental Build of configuration Debug for project program to caculate the power using recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:12:14: error: called object 'power' is not a function or function pointer
+  int result =power(number,power);
+              ^~~~~
+..\main.c:7:8: note: declared here
+  int x,power,number;
+        ^~~~~
+..\main.c: In function 'power':
+..\main.c:21:14: error: called object 'power' is not a function or function pointer
+   return num*power(num-1);
+              ^~~~~
+..\main.c:16:23: note: declared here
+ int power(int num,int power)
+                       ^~~~~
+..\main.c:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+20:47:08 **** Incremental Build of configuration Debug for project program to caculate the power using recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'calc_power':
+..\main.c:21:14: error: too few arguments to function 'calc_power'
+   return num*calc_power(num-1);
+              ^~~~~~~~~~
+..\main.c:16:5: note: declared here
+ int calc_power(int num,int power)
+     ^~~~~~~~~~
+..\main.c:22:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+20:47:45 **** Incremental Build of configuration Debug for project program to caculate the power using recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:12:6: warning: 'power' is used uninitialized in this function [-Wuninitialized]
+  int result =calc_power(number,power);
+      ^~~~~~
+gcc -o "program to caculate the power using recursion.exe" main.o 
+Info: Nothing to build for program to caculate the power using recursion
+20:48:44 **** Incremental Build of configuration Debug for project program to caculate the power using recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:7:6: warning: unused variable 'x' [-Wunused-variable]
+  int x,power,number;
+      ^
+gcc -o "program to caculate the power using recursion.exe" main.o 
+Info: Nothing to build for program to caculate the power using recursion
+Info: Nothing to build for program to caculate the power using recursion
+20:49:17 **** Incremental Build of configuration Debug for project program to caculate the power using recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:3:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:7:6: warning: unused variable 'x' [-Wunused-variable]
+  int x,power,number;
+      ^
+gcc -o "program to caculate the power using recursion.exe" main.o 
+Info: Nothing to build for program to caculate the power using recursion
