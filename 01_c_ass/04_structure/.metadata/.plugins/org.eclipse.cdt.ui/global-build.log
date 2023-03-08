@@ -1,0 +1,394 @@
+00:02:20 **** Clean-only build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+rm -rf main.d main.o c_program_to_add_distance_in_feet_and_inch.exe 
+00:02:30 **** Rebuild of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:15:12: warning: unused variable 'ptr3' [-Wunused-variable]
+  distance *ptr3=&sum;
+            ^~~~
+..\main.c: In function 'calculate_distance':
+..\main.c:32:51: error: invalid type argument of '->' (have 'distance {aka struct Sdistance}')
+  printf("the sum is %d feet and %0.1f inch ", ptr3->feet,ptr3->inch);
+                                                   ^~
+..\main.c:32:62: error: invalid type argument of '->' (have 'distance {aka struct Sdistance}')
+  printf("the sum is %d feet and %0.1f inch ", ptr3->feet,ptr3->inch);
+                                                              ^~
+00:03:11 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:15:12: warning: unused variable 'ptr3' [-Wunused-variable]
+  distance *ptr3=&sum;
+            ^~~~
+..\main.c: At top level:
+..\main.c:18:6: error: conflicting types for 'calculate_distance'
+ void calculate_distance(distance *ptr1,distance *ptr2,distance *ptr3)
+      ^~~~~~~~~~~~~~~~~~
+..\main.c:8:6: note: previous declaration of 'calculate_distance' was here
+ void calculate_distance(distance *ptr1,distance *ptr2,distance ptr3);
+      ^~~~~~~~~~~~~~~~~~
+00:07:24 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:15:12: warning: unused variable 'ptr3' [-Wunused-variable]
+  distance *ptr3=&sum;
+            ^~~~
+..\main.c: At top level:
+..\main.c:18:6: error: conflicting types for 'calculate_distance'
+ void calculate_distance(distance *ptr1,distance *ptr2,distance *ptr3)
+      ^~~~~~~~~~~~~~~~~~
+..\main.c:8:6: note: previous declaration of 'calculate_distance' was here
+ void calculate_distance(distance *ptr1,distance *ptr2,distance ptr3);
+      ^~~~~~~~~~~~~~~~~~
+00:07:56 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:16:31: error: incompatible type for argument 3 of 'calculate_distance'
+  calculate_distance(ptr1,ptr2,sum);
+                               ^~~
+..\main.c:8:6: note: expected 'distance * {aka struct Sdistance *}' but argument is of type 'distance {aka struct Sdistance}'
+ void calculate_distance(distance *ptr1,distance *ptr2,distance * ptr3);
+      ^~~~~~~~~~~~~~~~~~
+..\main.c:15:12: warning: unused variable 'ptr3' [-Wunused-variable]
+  distance *ptr3=&sum;
+            ^~~~
+00:08:17 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:09:40 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:10:52 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'calculate_distance':
+..\main.c:29:14: error: 'ptr' undeclared (first use in this function)
+   ptr3->feet=ptr->feet+1;
+              ^~~
+..\main.c:29:14: note: each undeclared identifier is reported only once for each function it appears in
+00:11:06 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:11:37 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:12:47 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:16:42 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:17:11 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:20:09 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:23:49 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:25:12 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+00:47:03 **** Rebuild of configuration Debug for project c_program_to_add_complex_numbers_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'calculate_sum':
+..\main.c:22:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d %f",&ptr1 ->real,&ptr1 ->imaginary);
+          ^
+..\main.c:24:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d %f",&ptr2 ->real,&ptr2 ->imaginary);
+          ^
+..\main.c:28:6: error: 'add_complex {aka struct Scomplex}' has no member named 'inch'
+  ptr3->inch=ptr1->imaginary+ptr2->imaginary;
+      ^~
+00:47:04 **** Incremental Build of configuration Debug for project c_program_to_add_distance_in_feet_and_inch ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_distance_in_feet_and_inch.exe main.o 
+00:47:33 **** Incremental Build of configuration Debug for project c_program_to_add_complex_numbers_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'calculate_sum':
+..\main.c:22:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d %f",&ptr1 ->real,&ptr1 ->imaginary);
+          ^
+..\main.c:24:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d %f",&ptr2 ->real,&ptr2 ->imaginary);
+          ^
+gcc -o c_program_to_add_complex_numbers_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+00:48:12 **** Incremental Build of configuration Debug for project c_program_to_add_complex_numbers_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_complex_numbers_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+00:48:53 **** Incremental Build of configuration Debug for project c_program_to_add_complex_numbers_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_complex_numbers_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+00:49:43 **** Incremental Build of configuration Debug for project c_program_to_add_complex_numbers_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_add_complex_numbers_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+01:06:55 **** Rebuild of configuration Debug for project c_program_to_store_information_of_astudent_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:9:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:16:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+  scanf("%s", &mohamed.name);
+          ^
+gcc -o c_program_to_store_information_of_astudent_using_structure.exe main.o 
+01:06:56 **** Rebuild of configuration Debug for project c_program_to_store_information_of_students_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:12:2: error: unknown type name 'student'
+  student student1,student2,student3;
+  ^~~~~~~
+..\main.c:18:15: error: 'mohamed' undeclared (first use in this function)
+  scanf("%s", &mohamed.name);
+               ^~~~~~~
+..\main.c:18:15: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:12:28: warning: unused variable 'student3' [-Wunused-variable]
+  student student1,student2,student3;
+                            ^~~~~~~~
+..\main.c:12:19: warning: unused variable 'student2' [-Wunused-variable]
+  student student1,student2,student3;
+                   ^~~~~~~~
+..\main.c:12:10: warning: unused variable 'student1' [-Wunused-variable]
+  student student1,student2,student3;
+          ^~~~~~~~
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_store_information_of_astudent_using_structure
+01:11:33 **** Incremental Build of configuration Debug for project c_program_to_store_information_of_students_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:18:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+  scanf("%s", &student[roll].name);
+          ^
+..\main.c:26:19: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+   printf("name : %s",&student[roll].name);
+                   ^
+..\main.c:27:22: warning: format '%d' expects argument of type 'int', but argument 2 has type 'float *' [-Wformat=]
+   printf("\n marks :%d ",&student[roll].marks);
+                      ^
+gcc -o c_program_to_store_information_of_students_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_store_information_of_astudent_using_structure
+01:13:07 **** Incremental Build of configuration Debug for project c_program_to_store_information_of_students_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:18:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+  scanf("%s", &student[roll].name);
+          ^
+..\main.c:27:22: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("\n marks :%d ",student[roll].marks);
+                      ^
+gcc -o c_program_to_store_information_of_students_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_store_information_of_students_using_structure
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_store_information_of_astudent_using_structure
+01:17:23 **** Incremental Build of configuration Debug for project c_program_to_store_information_of_students_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:18:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+  scanf("%s", &student[roll].name);
+          ^
+..\main.c:27:23: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   printf("\n marks : %d ",student[roll].marks);
+                       ^
+gcc -o c_program_to_store_information_of_students_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_store_information_of_students_using_structure
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_store_information_of_astudent_using_structure
+01:18:19 **** Incremental Build of configuration Debug for project c_program_to_store_information_of_students_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:18:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+  scanf("%s", &student[roll].name);
+          ^
+gcc -o c_program_to_store_information_of_students_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_store_information_of_astudent_using_structure
+01:18:26 **** Incremental Build of configuration Debug for project c_program_to_store_information_of_students_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:18:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+  scanf("%s", &student[roll].name);
+          ^
+gcc -o c_program_to_store_information_of_students_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_store_information_of_students_using_structure
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+Info: Nothing to build for c_program_to_store_information_of_astudent_using_structure
+01:19:41 **** Incremental Build of configuration Debug for project c_program_to_store_information_of_students_using_structure ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:8:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:18:10: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'char (*)[50]' [-Wformat=]
+  scanf("%s", &student[roll].name);
+          ^
+gcc -o c_program_to_store_information_of_students_using_structure.exe main.o 
+Info: Nothing to build for c_program_to_store_information_of_students_using_structure
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+01:25:48 **** Rebuild of configuration Debug for project c_program_to_find_area_using_macros ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:4:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:11:2: error: expected ';' before 'printf'
+  printf("area is = %f",area(raduis));
+  ^~~~~~
+..\main.c: At top level:
+..\main.c:13:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+Info: Nothing to build for c_program_to_store_information_of_astudent_using_structure
+Info: Nothing to build for c_program_to_store_information_of_students_using_structure
+Info: Nothing to build for c_program_to_add_complex_numbers_using_structure
+Info: Nothing to build for c_program_to_add_distance_in_feet_and_inch
+01:26:03 **** Incremental Build of configuration Debug for project c_program_to_find_area_using_macros ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:4:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o c_program_to_find_area_using_macros.exe main.o 
+Info: Nothing to build for c_program_to_store_information_of_astudent_using_structure
+Info: Nothing to build for c_program_to_store_information_of_students_using_structure
+Info: Nothing to build for c_program_to_find_area_using_macros

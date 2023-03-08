@@ -1,0 +1,25 @@
+#include "stdio.h"
+typedef struct Semployee
+{
+	int salary;
+	int bonus;
+	int deduction;
+}employee;
+employee mohamed, ahmed,mahmoud;
+void calculate_salary(employee*);
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	employee *ptr=&mohamed;
+	calculate_salary(ptr,mohamed_salary)
+	printf("mohamed salary is %d", *mohamed_salary);
+
+}
+void calculate_salary(employee* ptr,int*mohamed_salary)
+{
+	printf("enter information \n");
+	printf("enter salary and bounus and deduction \n ");
+	scanf("%d %d %d",ptr_>salary,ptr_>bonus,ptr_>deduction);
+	*mohamed_salary=ptr_>salary+ptr_>bonus-ptr_>deduction;
+}

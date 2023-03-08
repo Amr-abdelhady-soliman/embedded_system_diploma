@@ -1,0 +1,6 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:c_program_to_store_information_of_student.exe,org.eclipse.launchbar.core.descriptorType.default\:c_program_to_add_distance_in_feet_and_inch.exe,org.eclipse.launchbar.core.descriptorType.default\:c_program_to_add_complex_numbers_using_structure.exe,org.eclipse.launchbar.core.descriptorType.default\:c_program_to_store_information_of_students_using_structure.exe,org.eclipse.launchbar.core.descriptorType.default\:c_program_to_find_area_using_macros.exe
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:c_program_to_store_information_of_student.exe/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:c_program_to_store_information_of_student.exe/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

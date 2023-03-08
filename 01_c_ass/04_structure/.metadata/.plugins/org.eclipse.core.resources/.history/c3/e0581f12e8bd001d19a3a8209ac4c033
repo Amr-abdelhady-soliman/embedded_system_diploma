@@ -1,0 +1,18 @@
+#include "stdio.h"
+struct Sstudent
+{
+	char name[50];
+	int roll;
+	float marks;
+};
+
+
+void main ()
+{
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	struct Sstudent mohamed;
+	printf("enter name : ")
+	scanf("%s", mohamed.name);
+
+}

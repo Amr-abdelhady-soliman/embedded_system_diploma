@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;c_program_to_store_information_of_student&apos; to &apos;c_program_to_store_information_of_astudent_using_structure&apos;" description="Rename resource &apos;c_program_to_store_information_of_student&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/c_program_to_store_information_of_student" name="c_program_to_store_information_of_astudent_using_structure" stamp="1678316050873" updateReferences="true"/>
+</session>
